@@ -1,0 +1,32 @@
+DROP DATABASE IF EXISTS teste;
+CREATE DATABASE teste;
+USE teste;
+
+# QUESTÃO 2
+CREATE TABLE IF NOT EXISTS q2(
+	matricula INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(45),
+    cpf VARCHAR(45),
+    cargo VARCHAR(45),
+    nProjetos INT
+    );
+
+# INSIRA AS INFORMAÇÕES NA TABELA
+INSERT INTO q2 (nome, cpf, cargo, nProjetos) VALUES ('Junior','000.000.000-00','GP','2');
+INSERT INTO q2 (nome, cpf, cargo, nProjetos) VALUES ('Maria','111.111.111-11','Desenvolvedor','3');
+INSERT INTO q2 (nome, cpf, cargo, nProjetos) VALUES ('Carlos','222.222.222-22','Tester','4');
+INSERT INTO q2 (nome, cpf, cargo, nProjetos) VALUES ('Julia','333.333.333-33','Desenvolvedor','5');
+
+#SELECT * FROM q2;
+
+# BUSQUE USANDO A FUNÇÃO COUNT() QUANTOS FUNCIONARIOS TEM 4 OU MAIS PROJETOS
+SELECT COUNT(nProjetos) FROM q2 WHERE nProjetos >= 4;
+
+# USANDO A FUNÇÃO AVG() BUSQUE A MEDIA ARITMETICA DO NUMERO DE PROJETOS
+SELECT AVG(nProjetos) FROM q2;
+
+# BUSQUE UMA LISTA DOS CARGOS DA EMPRESA SEM REPETI-LOS
+SELECT DISTINCT cargo FROM q2;
+
+# BUSQUE NOME,CPF E NUMERO DE PROJETOS APENAS DOS DESENVOLVEDORES
+SELECT nome,cpf,nProjetos FROM q2 WHERE cargo = 'Desenvolvedor';
