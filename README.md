@@ -19,3 +19,4 @@ Dados são informações brutas, que sozinhas não tem valor nenhum e não infor
 9.A linguagem SQL é uma linguagem de programação usada na criação e manipulação de esquemas e de dados. Ela atua como uma interface entre os usuários de bancos de dados e os dados em si, servindo como uma linguagem padronizada para dar comandos ao SGBD. Além disso é a linguagem usada para a construção do software SGBD.
 
 10.A diferença entre esquema e instância em um sistema de banco de dados é que o esquema trata das estruturas de armazenamento, como tabelas e as relações entre elas, enquanto as instâncias dizem respeito à um SGBD em execução. Em uma mesma máquina física podem existir diversas instâncias em execução de diferentes SGBDs.
+
