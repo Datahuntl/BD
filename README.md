@@ -20,3 +20,4 @@ Dados são informações brutas, que sozinhas não tem valor nenhum e não infor
 
 10.A diferença entre esquema e instância em um sistema de banco de dados é que o esquema trata das estruturas de armazenamento, como tabelas e as relações entre elas, enquanto as instâncias dizem respeito à um SGBD em execução. Em uma mesma máquina física podem existir diversas instâncias em execução de diferentes SGBDs.
 
+https://app.diagrams.net/#G1hGQR4FfUic1WuAJc3wvlXVZz3gk3fY5y#%7B%22pageId%22%3A%22r4-kiJbnX2iSygfBocQI%22%7D
